@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 5 FORM</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <h1>HTML 5 FORM TUTORIAL</h1>
+      <hr />
+      <form>
+        <div>
+          <label for="inputname">nama lengkap</label>
+          <input type="text" name="nama_lengkap" id="inputname" />
+          <!-- for dan id harus sama -->
+        </div>
+        <div>
+          <label for="inputage">umur</label>
+          <input type="text" name="umur" id="inputage" />
+        </div>
+        <div>
+          <label for="inputbio">biografi</label>
+          <textarea name="biografi" id="inputbio"></textarea>
+        </div>
+        <div>
+          <p>gender</p>
+          <input type="radio" name="gender" id="inputlanang" />
+          <label for="inpulanang">laki-laki</label>
+          <input type="radio" name="gender" id="inputwedo" />
+          <label for="inputwedo">perempuan</label>
+          <br /><br />
+        </div>
+        <div>
+          <p>hobi</p>
+          <input type="checkbox" name="hobi" id="inputrenang" />
+          <label for="inputrenang">renang</label>
+          <input type="checkbox" name="hobi" id="inputnulis" />
+          <label for="inputnulis">nulis</label>
+          <input type="checkbox" name="hobi" id="inputjalan2" />
+          <label for="inputjalan2">jalan2</label>
+          <br /><br />
+        </div>
+        <div>
+          <label for="inputkota">asal kota</label>
+          <select name="asal_kota" id="inputkota">
+            <option value="smbw">sumbawa</option>
+            <option value="jkt">jakarta</option>
+            <option value="yog">yogyakarta</option>
+            <option value="prj">purwarejo</option>
+            <option value="pwk">purwakarta</option>
+          </select>
+        </div>
+        <div>
+          <label for="inputdate">tanggal lahir</label>
+          <input type="date" name="tgl_lahir" id="inputdate" />
+        </div>
+        <div>
+          <label for="inputemail">email</label>
+          <input type="email" name="email" id="inputemail" />
+        </div>
+        <div>
+          <label for="inputpass">password</label>
+          <input type="password" name="password" id="inputpass" />
+        </div>
+        <div>
+          <label for="inputfile">upload foto</label>
+          <input type="file" name="foto" id="inputfile" />
+        </div>
+        <!-- action button -->
+        <div class="grid">
+          <!-- tips shorcut: button[type-nya] -->
+          <button type="reset">batal</button>
+          <button type="submit">simpan</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

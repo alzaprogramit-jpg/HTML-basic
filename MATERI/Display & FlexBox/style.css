@@ -1,0 +1,58 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 250px;
+  width: 250px;
+  border: 2px dashed #333;
+  border-radius: 6px;
+}
+.area {
+  width: 100px;
+  height: 100px;
+  place-content: center;
+}
+
+.area h3,
+.area p {
+  margin: 0 auto;
+}
+.area p {
+  font-size: 14px;
+  color: #666;
+}
+.area-ib {
+  background: gold;
+  display: inline-block;
+}
+.area-in {
+  background: #cbc8c8;
+}
+.area-in p {
+  background: darkseagreen;
+  display: inline;
+  padding: 6px;
+}
+.area-none {
+  background-color: red;
+  display: none;
+}
+.card:hover .area-none {
+  display: block;
+}
+
+/* flexbox basic */
+.Flexbox-area {
+  display: flex;
+  /* efault: row */
+  flex-direction: row;
+  /* opsi flex-direction: ; */
+  /* (row-re) */
+  /* gap: jarak antar item */
+  gap: 20px;
+}
+.Flexbox-area .card {
+  height: 150px;
+  width: 150px;
+}

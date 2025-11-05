@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3: Box Model & Posistion</title>
+    <!-- add pico css -->
+    <link
+      rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <!-- add style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- bungkis dengan class container agar ada space kiri-kanan -->
+    <div class="container">
+      <h1>CSS3: Box Model & posisition</h1>
+      <hr />
+      <!-- buat kolom otomtis dengan kolom grid -->
+      <div class="grid">
+        <div class="card">
+            <div id="Box-A">
+             <p>Box A</p>   
+             <p> (konten polos)</p>
+            </div>
+        </div>
+        <div class="card">
+            <div id="Box-B">
+                <p>Box B</p>
+                <p>(konten + padding)</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div id="Box-C">
+                <p>Box C</p>
+                <p>(konten + padding + border)</p>
+            </div>
+        </div>
+        <div class="card">
+            <div id="Box-D">
+                <p>Box D</p>
+                <p>(konten + padding + border + margin)</p>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

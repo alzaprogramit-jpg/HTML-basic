@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABLE HTML</title>
+    <style>
+        #table-basic {
+            width: 60%;
+            border-collapse: collapse;
+        }
+        #table-basic td {
+            padding: 6px;
+            font-size: 16px
+        }
+        #table-basic .bg-blue {
+            background-color: blue;
+            color: white
+        }
+    </style>
+  </head>
+  <body>
+    <h1>HTML 5: TABLE</h1>
+    <hr />
+    <h3>TABLE DASAR</h3>
+    <!-- <tr>: untuk membuat baris -->
+    <!-- <td>: untuk membuat data/kolom -->
+    <table border="1" id="table-basic">
+        <tr class="bg-blue">
+            <th>No</th>
+            <th>Nama</th>
+            <th>Asal</th>
+            <th>kewarganegaraan</th>
+        </tr>
+        <!-- shorcut: tr>td*3 -->
+        <tr>
+            <td>1</td>
+            <td>Baihaqyy</td>
+            <td>Sumbawa</td>
+            <td>indonesia</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Luhtpiyy</td>
+            <td>Bandung</td>
+            <td>turki</td>
+        </tr>
+    </table>
+
+    <h3>TABLE STANDAR HTML 5</h3>
+    <!-- shorcut: table>thead+tbody+tfoot -->
+    <table border="1" style="width: 70%">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Nama Barang</th>
+                <th>jumlah barang</th>
+                <th>Harga Barang</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>19/10/2006</td>
+                <td>mie ayam</td>
+                <td>2 mangkok</td>
+                <td>Rp 20.000,-</td>
+                <td>lunas</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>20/10/2006</td>
+                <!-- rowspan: menggabungkan baris ke -->
+                <td rowspan="2">mixue dan silverqueen</td>
+                <td>10 biji</td>
+                <td>Rp 100.000,-</td>
+                <td>lunas</td>
+            </tr>
+           
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- colspan: menggabungkan kolom -->
+                <td colspan="5"><b>Total Pengeluaran:</b>
+                <th>Rp 120.000,-</th>
+            </tr>
+        </tfoot>
+    </table>
+  </body>
+</html>
